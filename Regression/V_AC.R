@@ -16,7 +16,7 @@ transf <- ts(TRANSF, start=c(2000), end=c(2016), frequency=1)
 expo <- ts(Expo, start=c(2005), end=c(2016), frequency=1)
 tc <- ts(TC, start=c(2000), end=c(2016), frequency=1)
 event_dummy <- ts(Dummy, start=c(2000), end=c(2016), frequency=1)
-incr <-ts(c(0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1), start=c(2000), end=c(2016), frequency=1) #2010
+incr <-ts(c(0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1), start=c(2000), end=c(2016), frequency=1)
 COS <- ts(COS, start=c(2000), end=c(2016), frequency=1)
 
 
