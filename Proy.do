@@ -1,10 +1,10 @@
-destring var_pernoc, replace dpcomma
-destring log_pib_r, replace dpcomma
-destring log_pernoc, replace dpcomma
+destring var1, replace dpcomma
+destring log_var2, replace dpcomma
+destring log_var1, replace dpcomma
 
 
-regress pernoc pib_r
-regress log_pernoc log_pib_r
+regress var1 var2
+regress log_var1 log_var2
 predict Resid, residual
 dfuller Resid
 line residual year, title(Residuals vs. year)
