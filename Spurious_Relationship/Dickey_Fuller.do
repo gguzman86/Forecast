@@ -7,7 +7,7 @@ regress var1 var2
 regress log_var1 log_var2
 predict Resid, residual
 dfuller Resid
-line residual year, title(Residuals vs. year)
+line residual year, title(Residuals vs year)
 
 
 
