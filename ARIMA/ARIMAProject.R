@@ -33,7 +33,7 @@ dev.off ();
 v3 <- ts(datos$log_VARIABLE, start=c(1990), end=c(2015), frequency=1) #Assign the corresponding years
 par(mfrow=c(2,2))
 plot.ts(v3)
-auto.arima(v3, test="adf", trace=TRUE) # Log values and the test "adf"
+auto.arima(v3, test="adf", trace=TRUE) # Log values and test "adf"
 acf(v3) #Plot correlogram (autocorrelations)
 pacf(v3) #Plot partial correlogram
 v3arima <- arima(v3, order=c(0,0,1))  #Put the values of AutoArima (Note to self: Automatize)
