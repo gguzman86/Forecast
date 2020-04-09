@@ -43,8 +43,5 @@ plot.forecast(v3forecast) #80% and 95% prediction intervals
 dev.copy(jpeg,filename="v3.jpg");
 dev.off ();
 
-l <- BoxCox.lambda(v1)
-BoxCox(v1, l)
-
-resultados <- matrix(c(v1forecast["mean"]), nrow=38, ncol=1, byrow=FALSE)
-write.csv(resultados, file = "ArimaProject.csv")
+results <- matrix(c(v1forecast["mean"]), nrow=38, ncol=1, byrow=FALSE)
+write.csv(results, file = "ArimaProject.csv")
