@@ -36,7 +36,7 @@ plot.ts(v3)
 auto.arima(v3, test="adf", trace=TRUE) # Log values and test "adf"
 acf(v3) #Plot correlogram (autocorrelations)
 pacf(v3) #Plot partial correlogram
-v3arima <- arima(v3, order=c(0,0,1))  #Put the values of AutoArima (Note to self: Automatize)
+v3arima <- arima(v3, order=c(0,0,1))  #Put the values of AutoArima (Note to self: Automate)
 v3arima
 v3forecast <- forecast.Arima(v3arima, h=20)
 plot.forecast(v3forecast) #80% and 95% prediction intervals
